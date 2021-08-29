@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Vishaal's Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul  
+            div#logo 
+              img(src="../static/img/logo.png")
+              |  VDA 
+            li #[a(href="/") HOME  ]
+            li #[a(href="/about") ABOUT ]
+            li #[a(href="/services") SERVICES]
+            li #[a(href="/plans") OUR PLANS]
+            li #[a(href="/contact") CONTACT US]
+
+    section#introSection 
+        div Welcome to Vishaal's Dance Academy 
+        div.small Eat.Dance.Sleep.Repeat.
+
+    section#missionSection 
+        h2 Our Mission 
+        div.card 
+          h3 Dance Perfection
+          div.card-box 
+            div.card-img 
+              img(src='../static/img/1.png')
+
+            div.card-content 
+              p This is the Best Dance Academy of Universe
+        div.card 
+          h3 Dance the way you like
+          div.card-box 
+            div.card-img 
+              img(src='../static/img/2.png')
+
+            div.card-content 
+              p This is the Best Dance Academy of Universe
+        div.card 
+          h3 Expert Training
+          div.card-box 
+            div.card-img 
+              img(src='../static/img/3.png')
+
+            div.card-content 
+              p This is the Best Dance Academy of Universe
+
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors 
+          img(src='../static/img/s1.png', class="spImage",  id="i")
+          img(src='../static/img/s2.png', class="spImage")
+          img(src='../static/img/s3.png', class="spImage")
+          img(src='../static/img/s4.png', class="spImage")
+
+    footer#footer   
+        | Copyright © 2020 VishaalDanceAcademy.com | All Rights Reserved
+    script
+      include ../static/script.js
